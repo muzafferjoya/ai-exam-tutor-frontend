@@ -27,16 +27,25 @@ export default function Dashboard() {
       </div>
 
       <div className="mt-8 grid grid-cols-1 gap-4">
-        <button className="p-4 bg-blue-100 rounded text-left hover:bg-blue-200">
-          📝 Generate Notes
-        </button>
-        <button className="p-4 bg-green-100 rounded text-left hover:bg-green-200">
-          🧠 Take Quiz
-        </button>
-        <button className="p-4 bg-yellow-100 rounded text-left hover:bg-yellow-200">
-          📊 View Progress
-        </button>
-      </div>
+  <button
+    onClick={() => (window.location.href = '/notes')}
+    className="p-4 bg-blue-100 rounded text-left hover:bg-blue-200"
+  >
+    📝 Generate Notes
+  </button>
+  <button
+    onClick={() => (window.location.href = '/quiz')}
+    className="p-4 bg-green-100 rounded text-left hover:bg-green-200"
+  >
+    🧠 Take Quiz
+  </button>
+  <button
+    onClick={() => (window.location.href = '/progress')}
+    className="p-4 bg-yellow-100 rounded text-left hover:bg-yellow-200"
+  >
+    📊 View Progress
+  </button>
+</div>
     </div>
   )
 }
